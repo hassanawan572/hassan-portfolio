@@ -6,25 +6,31 @@ export default function Hero() {
   const [imageFailed, setImageFailed] = useState(false);
 
   return (
-    <section id="top" className="grid lg:grid-cols-2 items-center gap-12 min-h-[85vh] py-16">
+    <section id="top" className="grid grid-cols-2 items-center gap-4 lg:gap-12 min-h-[85vh] py-12 lg:py-16">
       <div>
-        <p className="text-xs font-semibold tracking-[0.15em] text-muted">{profile.eyebrow}</p>
+        <p className="text-[10px] sm:text-xs font-semibold tracking-[0.15em] text-muted">
+          {profile.eyebrow}
+        </p>
 
-        <h1 className="mt-6 text-4xl sm:text-5xl font-extrabold leading-tight">
+        <h1 className="mt-4 lg:mt-6 text-2xl sm:text-3xl lg:text-5xl font-extrabold leading-tight">
           Hey there, I&apos;m <span className="text-accent">{profile.name}</span>
         </h1>
 
-        <p className="mt-2 text-2xl sm:text-3xl font-bold text-accent2">{profile.role}</p>
+        <p className="mt-2 text-lg sm:text-xl lg:text-3xl font-bold text-accent2">
+          {profile.role}
+        </p>
 
-        <p className="mt-6 max-w-md text-muted">{profile.intro}</p>
+        <p className="mt-4 lg:mt-6 max-w-md text-sm lg:text-base text-muted">
+          {profile.intro}
+        </p>
 
-        <div className="mt-5 flex flex-col gap-3">
+        <div className="mt-4 lg:mt-5 flex flex-col gap-2 lg:gap-3">
           {heroSkills.map((row, i) => (
-            <div key={i} className="flex flex-wrap gap-3">
+            <div key={i} className="flex flex-wrap gap-2 lg:gap-3">
               {row.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-accent/50 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent shadow-[0_0_10px_rgba(34,211,238,0.45)]"
+                  className="rounded-full border border-accent/50 px-2.5 py-1 lg:px-4 lg:py-1.5 text-[10px] lg:text-xs font-semibold tracking-wide text-accent shadow-[0_0_10px_rgba(34,211,238,0.45)]"
                 >
                   {skill}
                 </span>
@@ -33,7 +39,7 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-wrap gap-4">
+        <div className="mt-6 lg:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 lg:gap-4">
           <PrimaryButton href={profile.resumeUrl} variant="outline">
             Download Resume
           </PrimaryButton>
@@ -47,7 +53,7 @@ export default function Hero() {
           No card/border here on purpose: the image's edges are faded out via
           a CSS mask so it blends straight into the page background, and a
           glow sits behind it for the lit-up look. */}
-      <div className="relative h-[340px] sm:h-[420px] lg:h-[500px] w-full flex items-center justify-center">
+      <div className="relative h-[200px] sm:h-[280px] lg:h-[500px] w-full flex items-center justify-center">
         <div
           className="absolute inset-0 blur-3xl opacity-50"
           style={{
@@ -70,7 +76,7 @@ export default function Hero() {
             }}
           />
         ) : (
-          <span className="relative text-muted text-sm px-6 text-center max-w-xs">
+          <span className="relative text-muted text-xs px-3 text-center max-w-[160px] lg:max-w-xs lg:text-sm">
             Drop your hero image at{" "}
             <code className="text-accent2">/public/hero-portrait.png</code>
           </span>
