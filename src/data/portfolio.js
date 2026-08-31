@@ -87,7 +87,7 @@ export const projects = [
     category: "Web Based",
     stack: ["Next", "Tailwind css", ],
     description: "Developed a portfolio project using Next js and tailwind css for my representation",
-    link: "",
+    link: "https://hassan-portfolio-psi-two.vercel.app",
   },
 ];
 

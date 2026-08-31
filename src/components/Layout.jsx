@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <div className="min-h-screen">
       <CursorTrail />
       <Sidebar />
-      <main className="lg:ml-[220px] px-6 sm:px-10 max-w-content">
+      <main className="pt-20 lg:pt-0 lg:ml-[220px] px-6 sm:px-10 max-w-content">
         {children}
         <Footer />
       </main>
