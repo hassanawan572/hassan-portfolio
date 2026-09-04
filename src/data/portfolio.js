@@ -6,12 +6,12 @@ export const profile = {
   email: "hassanawan1870@gmail.com",
   github: "https://github.com/hassanawan572", // TODO: add your GitHub URL
   linkedin: "https://www.linkedin.com/in/hassan-awan-k",// TODO: add your LinkedIn URL
-  resumeUrl: "/resume.pdf", // drop your resume PDF in /public and update this if renamed
+  resumeUrl: "/hassan_resume_.pdf", // drop your resume PDF in /public and update this if renamed
   heroImage: "/hero-portrait.png", // drop your hero image in /public and update this if renamed
 };
 export const heroSkills = [
   ["REACT | NEXT", "REACT NATIVE", "DJANGO"],
-  ["LLM", "RAG", "n8n"],
+  ["LLM", "RAG", "N8N"],
 ];
 export const navLinks = [
   { label: "About", href: "#about" },
@@ -50,7 +50,7 @@ export const experience = [
   {
     role: "Freelance Developer",
     org: "Self-employed",
-    period: "Mar-2023_Nov_2023", // TODO: add dates
+    period: "Mar-2025_Present", // TODO: add dates
     description: "Delivered React-native based applications for freelance clients on project basis.",
   },
   
@@ -65,7 +65,7 @@ export const projects = [
     stack: ["React", "Django", "Postgree-SQL", "JWT", "Tailwind CSS"],
     description:
       "An E-Commerce web Based Application using React and Tailwind css for frontend UI with JWT Authentication and Backend focused on Django Rest Framework with APi's to handle the complete backend architecture .",
-    link: "",
+    link: "https://khansstore.vercel.app/",
   },
   {
     title: "X Chat",
@@ -73,7 +73,7 @@ export const projects = [
     stack: ["React", "Django", "Gemini LLM","Postgree-SQL", ],
     description:
       "Developed a Real-time chatbot using Gemini's LLM which handle the user responses with Google Gemini's using its APi",
-    link: "",
+    link: "https://x-chat-ivory.vercel.app/login",
   },
   {
     title: "NIMO",
